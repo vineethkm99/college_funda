@@ -1,0 +1,270 @@
+body {
+  font: 400 15px Fitura, sans-serif;
+  line-height: 1.8;
+  /*color: #818181;*/
+  color: black;
+  background-image: url(vailvalley.jpg);
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  height: 100%;
+  width: 100%
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  margin-bottom: 30px;
+} 
+
+.head-back {
+  position: relative;
+  color: black;
+  /*padding: 250px 50px;*/
+  height: 100vh;
+  font-family: Fitura, sans-serif;
+  padding-top: 250px;
+}
+
+.logo-small {
+  color: #f4511e;
+  font-size: 50px;
+}
+
+.logo {
+  color: #f4511e;
+  font-size: 200px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #f4511e;
+  z-index: 999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+/*  letter-spacing: 4px;
+*/  border-radius: 0;
+  font-family: Fitura, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-brand:hover{
+  cursor: pointer;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+#searchbar{
+  height: 45px;
+}
+
+.btn-search{
+  background-color: #f4511e;
+}
+
+.search{
+  position: relative;
+}
+
+#searchresults{
+  position:absolute;
+  width: 520px;
+  max-height: 200px;
+  margin:4px auto;
+  left: 0;
+  right: 0;
+  border-width: 0px;
+  background-color: white;
+  border-radius: 3px;
+  z-index: 99;
+}
+.search_result_modal{
+  text-align: center;
+}
+.searchelement a, .search_result_modal a{
+  color: #f4511e;
+  display: block;
+}
+
+.btn-lg a:hover,.btn-lg a:active{
+  text-decoration: none;
+} 
+
+.searchelement a:hover, .search_result_modal a:hover{
+  text-decoration: none;
+  color: white;
+  background-color:#f4511e;
+  cursor: pointer;
+}
+
+.ser {
+  margin: auto;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+} 
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+  width: 100px;
+}
+
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+
+.item{
+  margin: 40px;
+}
+
+.slideanim {
+  visibility:hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;	
+  animation-duration: 1s;	
+  -webkit-animation-duration: 1s;
+  visibility: visible;			
+} 
+
+.container-footer{
+  padding: 10px;
+  background-color: #80d8ff;
+  color: black;
+}
+
+.img-caro{
+  width: 100%;
+  height: 200px;
+}
+
+.imgcard{
+  border: 1px solid black;
+  margin: 30px;
+  box-shadow: 0 4px 8px 0;
+  background-color: white;
+}
+
+.span4{
+  padding-left: 100px;
+}
+
+#topcol{
+  background-color: #80d8ff;
+  width: 100%;
+  padding-top: 40px;
+}
+
+#top-p{
+  font-size: 20px;
+}
+
+#about{
+  color: black;
+  font-size: 19px;
+}
+
+#services,#about{
+  padding-top: 40px;
+  color: black;
+}
+
+footer .glyphicon{
+  font-size: 20px;
+  color: #f4511e;
+  background-color: #80d8ff;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  } 
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  #searchresults{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+ }
+
+@media screen and (min-width: 768px){
+  #topcol,#about,#services,.head-back{
+    height: 100vh;
+  }
+.mtcard{
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mtcard img{
+    border-radius: 10px;
+}
